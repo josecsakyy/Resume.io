@@ -1,0 +1,90 @@
+body {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .margins-top {
+    background-color: #75a30b; /* Color verde para los márgenes */
+    padding: 20px;
+    color: #FFFFFF; /* Color del texto, lo ajustamos a blanco para que sea visible sobre el fondo verde */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999; /* Asegura que el margen superior esté por encima del resto del contenido */
+    font-weight: 800; /* Ajusta el valor para hacer el texto más "gordito" */
+    text-align: center;
+    font-family: 'Montserrat', sans-serif; /* Usamos la fuente Montserrat */
+    font-size: 20px;
+  }
+  
+  .margins-bottom {
+    background-color: #75a30b; /* Color verde para los márgenes */
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .margins-bottom div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 10px;
+  }
+  
+  .margins-bottom img {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin-left: 2cm; /* Margen izquierdo de 2cm */
+    margin-right: 2cm; /* Margen derecho de 2cm */
+  }
+  
+  .margins-bottom p {
+    text-align: center;
+    margin: 0; 
+    color: white;
+    font-weight: 800; /* Ajusta el valor para hacer el texto más "gordito" */
+    font-family: 'Montserrat', sans-serif; /* Usamos la fuente Montserrat */
+    font-size: 20px;
+  }
+  
+  body {
+    font-size: 18px; /* Cambia el tamaño de fuente predeterminado para toda la página */
+    text-align: center; /* Centra el contenido en la página */
+  }
+  
+  h1 {
+    font-size: 28px; /* Aumenta el tamaño de fuente del título principal */
+  }
+  
+  h2 {
+    font-size: 24px; /* Aumenta el tamaño de fuente de los títulos secundarios */
+  }
+  
+  .documento, .mapa {
+    margin: 20px auto; /* Centra los elementos horizontalmente con un margen superior e inferior de 20px */
+    max-width: 800px; /* Establece un ancho máximo para los elementos */
+  }
+  
+  .scroll-up {
+    position: fixed;
+    top: 50px; /* Distancia desde la parte superior */
+    right: 20px; /* Distancia desde la parte derecha */
+    max-width: calc(100% - 40px); /* Limita la anchura máxima */
+    background-color: #4c6a06ba; /* Color de fondo del botón */
+    color: #FFFFFF; /* Color del texto del botón */
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+  
+  .scroll-up:hover {
+    background-color: #314403ba; /* Color de fondo del botón al pasar el mouse por encima */
+  }
+  

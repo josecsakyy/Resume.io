@@ -1,0 +1,78 @@
+body {
+    margin: 0;
+    padding: 0;
+
+  }
+
+  .background-smaller {
+    background-size: contain; /* Ajusta el tamaño para que la imagen esté completamente visible */
+  }
+  
+  .margins {
+    background-color: #cb3c4a; /* Color verde para los márgenes */
+    padding: 20px;
+    color: #FFFFFF; /* Color del texto, lo ajustamos a blanco para que sea visible sobre el fondo verde */
+  }
+  
+  .margins-top {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999; /* Asegura que el margen superior esté por encima del resto del contenido */
+    color: white;
+    font-weight: 800; /* Ajusta el valor para hacer el texto más "gordito" */
+    text-align: center;
+    font-family: 'Montserrat', sans-serif; /* Usamos la fuente Montserrat */
+    font-size: 20px;
+  }
+  .main-content{
+    color: rgb(11, 11, 11);
+    font-weight: 800; /* Ajusta el valor para hacer el texto más "gordito" */
+    text-align: justify;
+    font-family: 'Montserrat', sans-serif; /* Usamos la fuente Montserrat */
+    font-size: 25px;
+    margin-top: 250px;
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+
+  .image-container {
+    text-align: center;
+  }
+  
+  .image-container img {
+    display: block;
+    margin: 0 auto;
+  }
+  
+  .image-container h2 {
+    text-align: center;
+  }
+  
+
+  hr {
+    color: #cb3c4a;        /* Cambia el color de la línea */
+    border-style: solid; 
+    height: 5px;       /* Establece la altura de la línea */
+    width: 100%;        /* Establece el ancho de la línea */
+    background-color: #cb3c4a;
+  }
+  
+  
+  
+  .scroll-up {
+    position: fixed;
+    top: 50px; /* Distancia desde la parte superior */
+    right: 20px; /* Distancia desde la parte derecha */
+    max-width: calc(100% - 40px); /* Limita la anchura máxima */
+    background-color: #9b1e2d; /* Color de fondo del botón */
+    color: #FFFFFF; /* Color del texto del botón */
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+  
+  .scroll-up:hover {
+    background-color: #9b1e2dc4; /* Color de fondo del botón al pasar el mouse por encima */
+  }

@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#sidebar {
+    position: fixed;
+    top: 0;
+    left: -450px; 
+    width: 450px; 
+    height: 100vh;
+    background-color: navy;
+    transition: left 0.3s;
+    opacity: 1;
+    overflow-y: auto;
+}
+
+#sidebar:hover {
+    left: 0;
+}
+
+.jose {
+    color: white;
+    font-weight: 800; /* Ajusta el valor para hacer el texto más "gordito" */
+    text-align: center;
+    font-family: 'Montserrat', sans-serif; /* Usamos la fuente Montserrat */
+    margin-top: 20px;
+    font-size: 40px;
+}
+
+.foto-perfil {
+    display: block;
+    margin: 20px auto; /* Ajusta los márgenes para centrar la foto */
+    width: 300px; /* Ajusta el tamaño de la foto */
+    height: 300px; /* Ajusta el tamaño de la foto */
+    border-radius: 50%; /* Aplica un borde circular */
+    object-fit: cover; /* Ajusta la imagen para cubrir el contenedor sin deformarse */
+}
+
+.learn-more-container {
+    position: absolute;
+    bottom: 15px;
+    right: 1px;
+}
+
+.learn-more {
+    color: white;
+    font-size: 18px;
+    font-family: "Arial", sans-serif;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    letter-spacing: 0.2em;
+}
+
+#content {
+    margin-left: 200px;
+    margin-right: 200px;
+    padding: 20px;
+}
+
+.titulo-azul {
+    color: navy; /* Cambia el color del título a azul */
+    font-weight: 800;
+    font-size: 36px; /* Ajusta el tamaño del título a tu preferencia */
+    font-family: "Arial", sans-serif; /* Cambia la tipografía del título a una formal */
+    text-align: center;
+}
+
+.seccion-recuadro {
+    border: 5px solid navy;
+    padding: 10px;
+}
+
+.seccion-recuadro p {
+    margin: 0; /* Asegura que no haya margen dentro del recuadro */
+}
+
+.titulo-azul {
+    margin: 0; /* Asegura que no haya margen alrededor del título */
+}
+
+.descripcion {
+    font-family: 'Arial', sans-serif; /* Utiliza una fuente formal, por ejemplo Arial */
+    font-size: 20px; /* Ajusta el tamaño de fuente a tu preferencia */
+    font-weight: 600;
+    color: black; /* Cambia el color del texto a negro */
+    line-height: 1.6; /* Ajusta el interlineado a tu preferencia */
+    text-align: justify; /* Justifica el texto para un mejor aspecto */
+}
+
+.foto-linea {
+    height: 5px;
+    width: calc(100% - 65px);
+    background-color: white;
+    margin-top: 20px; /* Espacio entre la foto y la línea */
+    margin-bottom: 20px; /* Espacio entre la línea y las opciones */
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+.enlace-jose {
+    color: white;
+    font-size: 30px;
+    font-weight: 800;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    display: block;
+    padding: 5px 0;
+    text-align: center;
+}
+
+.enlace-jose:hover {
+    background-color: #0B2345;
+}
+
+/* Estilo para la sección de contacto */
+.contacto-seccion {
+    margin-top: 20px; /* Espacio entre las opciones y la sección de contacto */
+}
+
+/* Estilo para el título de contacto */
+.contacto-titulo {
+    font-family: 'Montserrat', sans-serif; /* Utiliza la fuente Montserrat */
+    font-size: 25px; /* Ajusta el tamaño de fuente a tu preferencia */
+    color: white; /* Cambia el color del texto a blanco */
+    margin-right: 70px;
+    margin-left: 50px;
+}
+
+/* Estilo para el texto de contacto */
+.contacto-texto {
+    font-family: 'Montserrat', sans-serif; /* Utiliza la fuente Montserrat */
+    font-size: 20px; /* Ajusta el tamaño de fuente a tu preferencia */
+    color: white; /* Cambia el color del texto a blanco */
+    line-height: 1.6; /* Ajusta el interlineado a tu preferencia */
+    text-align: justify; /* Justifica el texto para un mejor aspecto */
+    margin-right: 70px;
+    margin-left: 50px;
+}
+
+.datos {
+    font-size: 18px; /* Ajusta el tamaño de fuente a tu preferencia */
+    font-weight: 600;
+}
+
+/* Estilos para los botones de buscar y documentos */
+
+.boton-documentos,
+.boton-evaluar {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: navy;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 20px; /* Cambiamos el valor para hacer los botones redonditos */
+  cursor: pointer;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  z-index: 1; /* Asegura que los botones estén sobre el contenido */
+}
+
+.boton-documentos {
+    bottom: 70px;
+}
+
+
+
+

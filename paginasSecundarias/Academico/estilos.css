@@ -1,0 +1,86 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.margins {
+  background-color: #0fa498; /* Color verde para los márgenes */
+  padding: 20px;
+  color: #FFFFFF; /* Color del texto, lo ajustamos a blanco para que sea visible sobre el fondo verde */
+}
+
+.margins-top {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9999; /* Asegura que el margen superior esté por encima del resto del contenido */
+  color: white;
+  font-weight: 800; /* Ajusta el valor para hacer el texto más "gordito" */
+  text-align: center;
+  font-family: 'Times New Roman', Times, serif; /* Usamos la fuente Montserrat */
+  font-size: 20px;
+}
+.margins-bottom {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+.contenido-formal {
+  text-align: justify;
+  margin: 100px;
+  padding: 20px;
+  font-weight: 500; /* Ajusta el valor para hacer el texto más "gordito" */
+  font-family:'Times New Roman', Times, serif; /* Usamos la fuente Montserrat */
+  font-size: 30px;
+}
+
+.contenido-formal p {
+  text-align: justify;
+  margin-bottom: 120px;
+  margin-top: 200px;
+  max-width: 100%;
+  overflow-wrap: break-word;
+  line-height: 1.5;
+}
+
+.scroll-up {
+  position: fixed;
+  top: 50px; /* Distancia desde la parte superior */
+  right: 20px; /* Distancia desde la parte derecha */
+  max-width: calc(100% - 40px); /* Limita la anchura máxima */
+  background-color: #15948a; /* Color de fondo del botón */
+  color: #FFFFFF; /* Color del texto del botón */
+  padding: 10px 15px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.scroll-up:hover {
+  background-color: #085a53; /* Color de fondo del botón al pasar el mouse por encima */
+}
+
+.margins-bottom {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  text-align: center; /* Centrar el contenido horizontalmente */
+  padding: 20px;
+  background-color: #0fa498; /* Color verde para el margen inferior */
+  color: #FFFFFF; /* Color del texto, lo ajustamos a blanco para que sea visible sobre el fondo verde */
+}
+
+.margins-bottom a {
+  color: #FFFFFF; /* Color del texto del enlace dentro del margen inferior */
+  background-color: #15948a; /* Color de fondo del botón */
+  padding: 10px 15px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.margins-bottom a:hover {
+  background-color: #e4f6f4; /* Color de fondo del botón al pasar el mouse por encima */
+}

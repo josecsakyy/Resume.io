@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EVALUACION</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+  <div class="margins-top margins">
+    <h1>EVALUACION</h1>
+    <a href="../../index.html" class="scroll-up">Regresar</a>
+  </div>
+  <br><br><br><br><br><br><br><br>
+
+  <h1>Formulario de Contacto</h1>
+  <div class="formulario-container">
+    <!-- Added the "id" attribute to the form -->
+    <form id="formulario" onsubmit="return calcularPromedio(event)">
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" name="nombre" required>
+      <br>
+
+      <label for="apellido">Apellido:</label>
+      <input type="text" id="apellido" name="apellido" required>
+      <br>
+
+      <label for="pais">País:</label>
+      <select id="pais" name="pais" required>
+        <option value="Argentina">Argentina</option>
+        <option value="España">España</option>
+        <option value="Estados Unidos">Estados Unidos</option>
+        <option value="México">México</option>
+      </select>
+      <br>
+      <label for="idioma">Idioma:</label>
+
+      <label>
+        <input type="radio"  name="idioma" value="espanol" onclick="mostrarMensaje('Es un placer poder compartir esta INFORMACION')"> Español
+      </label>
+      <br>
+      <label>
+        <input type="radio"  name="idioma" value="ingles" onclick="mostrarMensaje('It is a pleasure being able to share this INFORMATION')"> Inglés
+      </label>
+      <br>
+      <label>
+        <input type="radio"  name="idioma" value="frances" onclick="mostrarMensaje('C est un plaisir de partager cette information')"> Francés
+      </label>
+      <br>
+
+      <label for="puntaje_academico">Puntaje Académico (0-100):</label>
+      <input type="number" id="puntaje_academico" name="puntaje_academico" required>
+      <br>
+
+      <label for="puntaje_deportivo">Puntaje Deportivo (0-100):</label>
+      <input type="number" id="puntaje_deportivo" name="puntaje_deportivo" required>
+      <br>
+
+      <label for="puntaje_personal">Puntaje Personal (0-100):</label>
+      <input type="number" id="puntaje_personal" name="puntaje_personal" required>
+      <br>
+
+      <label for="comentarios">Comentarios:</label>
+      <textarea id="comentarios" name="comentarios" rows="4" required></textarea>
+      <br>
+
+      <label for="email_domain">Dominio de Email:</label>
+      <input type="text" id="email_domain" name="email_domain" required>
+      <br>
+
+      <input type="submit" value="Calcular Promedio" class="boton-estandar"><br><br>
+    <button type="button" onclick="borrarFormulario()" class="boton-estandar">Borrar</button>
+
+      <br><br><br>
+      <div id="mensaje_idioma"></div>
+      <div id="resultado_promedio"></div><br>
+      <div id="mensaje_agradecimiento"></div> 
+    </form>
+
+   
+   
+
+
+
+  </div>
+
+  <script src="java.js"></script>
+</body>
+</html>

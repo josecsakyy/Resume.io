@@ -1,0 +1,160 @@
+body {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .margins-top {
+    background-color: #61635d; /* Color verde para los márgenes */
+    padding: 20px;
+    color: #FFFFFF; /* Color del texto, lo ajustamos a blanco para que sea visible sobre el fondo verde */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999; /* Asegura que el margen superior esté por encima del resto del contenido */
+    font-weight: 800; /* Ajusta el valor para hacer el texto más "gordito" */
+    text-align: center;
+    font-family: 'Montserrat', sans-serif; /* Usamos la fuente Montserrat */
+    font-size: 20px;
+  }
+  
+  .margins-bottom {
+    background-color: #a3a4a0; /* Color verde para los márgenes */
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .margins-bottom div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 10px;
+  }
+  
+  .margins-bottom img {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin-left: 2cm; /* Margen izquierdo de 2cm */
+    margin-right: 2cm; /* Margen derecho de 2cm */
+  }
+  
+  .margins-bottom p {
+    text-align: center;
+    margin: 0; 
+    color: white;
+    font-weight: 800; /* Ajusta el valor para hacer el texto más "gordito" */
+    font-family: 'Montserrat', sans-serif; /* Usamos la fuente Montserrat */
+    font-size: 20px;
+  }
+  
+  .contenido-informal {
+    text-align: justify;
+    margin: 100px;
+    padding: 20px;
+    font-weight: 500; /* Ajusta el valor para hacer el texto más "gordito" */
+    font-family:'Times New Roman', Times, serif; /* Usamos la fuente Montserrat */
+    font-size: 30px;
+  }
+  
+  .contenido-informal p {
+    text-align: justify;
+    margin-bottom: 120px;
+    margin-top: 200px;
+    max-width: 100%;
+    overflow-wrap: break-word;
+    line-height: 1.5;
+  }
+  
+  .scroll-up {
+    position: fixed;
+    top: 50px; /* Distancia desde la parte superior */
+    right: 20px; /* Distancia desde la parte derecha */
+    max-width: calc(100% - 40px); /* Limita la anchura máxima */
+    background-color: #c9cbc5ba; /* Color de fondo del botón */
+    color: #FFFFFF; /* Color del texto del botón */
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+  
+  .scroll-up:hover {
+    background-color: #787a72ba; /* Color de fondo del botón al pasar el mouse por encima */
+  }
+  
+  .form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  #formulario {
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+  }
+  
+  /* Para centrar el texto dentro del formulario */
+  #formulario h2 {
+    text-align: center;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  input[type="text"],
+  textarea,
+  select,
+  input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 15px;
+  }
+  
+  textarea {
+    resize: vertical; /* Permite ajustar la altura verticalmente */
+  }
+  
+  input[type="submit"] {
+    background-color: #6d716d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #7f867f;
+  }
+
+  .boton-estandar {
+    background-color: #6d716d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-bottom: 15px; /* Espacio entre los botones */
+  }
+  
+  .boton-estandar:hover {
+    background-color: #7f867f;
+  }
